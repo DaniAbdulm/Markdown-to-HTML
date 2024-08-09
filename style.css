@@ -6,6 +6,7 @@
 
 html {
     height: 100vh;
+    background-color: #2f3640;
 }
 
 .nav {
@@ -38,5 +39,31 @@ html {
     transition: 0.2s;
 }
 .nav a:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
+.markdown-container {
+    width: 45%;
+    border-radius: 8px;
+    height: 80vh;
+    padding: 1rem;
+    background-color: #718093;
+    box-shadow: 0px 0px 20px black;
+    color: white;
+}
+
+.html-container {
+    width: 45%;
+    border-radius: 8px;
+    height: 80vh;
+    padding: 1rem;
+    background-color: #718093;
+    box-shadow: 0px 0px 20px black;
     color: white;
 }

@@ -7,3 +7,36 @@
 html {
     height: 100vh;
 }
+
+.nav {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.nav h1 {
+    width: 50%;
+    padding: 1.5rem 3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.nav ul {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+.nav li {
+    margin-right: 15%;
+    position: relative;
+    top: 35%;
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: grey;
+    transition: 0.2s;
+}
+.nav a:hover {
+    color: white;
+}

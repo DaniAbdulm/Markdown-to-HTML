@@ -38,6 +38,15 @@ html {
     color: grey;
     transition: 0.2s;
 }
+.nav button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: 0.2s;
+}
+
 .nav a:hover {
     color: white;
 }
@@ -88,4 +97,20 @@ html {
     color: black;
     font-family: 'Inter', sans-serif;
     overflow-y: auto;
+}
+
+.upload-btn {
+    background-color: #1e90ff;
+}
+.upload-btn:hover {
+    background-color: #5352ed;
+    cursor: pointer;
+}
+
+.export-btn {
+    background-color: #ffa502;
+}
+.export-btn:hover {
+    cursor: pointer;
+    background-color: #ff7f50;
 }

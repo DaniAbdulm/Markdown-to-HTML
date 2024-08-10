@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- CodeMirror CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
 
-<!-- CodeMirror JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <!-- CodeMirror Markdown Mode -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/markdown/markdown.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/solarized.min.css">
 
-<!-- CodeMirror Markdown Mode -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/markdown/markdown.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/solarized.min.css">
-<title>LiveMark - Markdown to HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+
+    <title>LiveMark - Markdown to HTML</title>
 </head>
 <body>
     <div class="nav">
@@ -29,11 +30,9 @@
     </div>
     <div class="container">
         <div class="markdown-container">
-            <textarea class="markdown-editor" name="" id="markdown-editor"></textarea>
+            <textarea class="markdown-editor" placeholder="Markdown text goes here..." id="markdown-editor"></textarea>
         </div>
-        <div class="html-container">
-            This is the html output container.
-        </div>
+        <div class="html-container" id="html-container"></div>
     </div>
 
     <script src="script.js"></script>

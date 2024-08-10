@@ -1,17 +1,17 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const markdownInput = document.getElementById('markdown-editor'); 
     const htmlOutput = document.getElementById('html-container'); 
     
     //converting markdown to HTML and updating the preview pane 
     function updateHTML(markdownText) {
-        const htmlContent = marked(markdownText); 
+        const htmlContent = marked.parse(markdownText); 
         htmlOutput.innerHTML = htmlContent; 
     }
 
     //live updating event listener 
     markdownInput.addEventListener('input', () => {
         const markdownText = markdownInput.value; 
+        console.log('markdown input is working.')
         updateHTML(markdownText); 
         autosave(markdownText); 
     }); 
